@@ -1,0 +1,23 @@
+<h1>Listing products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Uid</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Categories</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render @products %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>

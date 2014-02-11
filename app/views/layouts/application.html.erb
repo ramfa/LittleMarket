@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LittleMarket</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Little Market atendido por su dueño:APU NAHASHELAPELATIM..solo APU</h1>
+
+			<ul class="nav">
+				<li><%= link_to "Products", products_path %></li>
+				<li><%= link_to "Categories", categories_path %></li>
+				<li><%= link_to "Tags", tags_path %></li>
+				<li><%= link_to "Taxes", taxes_path %></li>
+			</ul>
+		</div>
+		<div class="main">
+
+<%= yield %>
+		</div>
+		<div class="footer">
+			Realizado por G. Facundo ~ 2014
+		</div>
+	</div>
+
+</body>
+</html>
